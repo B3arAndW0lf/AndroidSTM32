@@ -8,57 +8,82 @@
 
 
 
+
+
+
    <TextView
-       android:id="@+id/temperature"
+       android:id="@+id/temperatureTextView"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="@string/temperature"
-       android:textSize="24sp" />
-
+       android:textSize="24sp"
+       android:textColor="@android:color/white"
+       android:text="@string/temperatureTextView"
+       android:padding="16dp"
+       app:layout_constraintTop_toBottomOf="@id/diod_off"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent" />
 
    <Button
-       android:id="@+id/on"
+       android:id="@+id/TempOn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/TempOn"
+       app:layout_constraintTop_toBottomOf="@id/temperatureTextView"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/TempOff"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="8dp" />
+
+   <!-- Second Button -->
+   <Button
+       android:id="@+id/TempOff"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/TempOff"
+       app:layout_constraintTop_toBottomOf="@id/temperatureTextView"
+       app:layout_constraintStart_toEndOf="@id/TempOn"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="16dp"
+       android:layout_marginStart="8dp" />
+
+   <Button
+       android:id="@+id/diod_on"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
 
        android:layout_marginTop="28dp"
 
-       android:text="@string/on"
+
+       android:text="@string/diod_on"
        app:layout_constraintHorizontal_bias="0.498"
        app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintRight_toRightOf="parent"
+
        app:layout_constraintTop_toTopOf="parent" />
 
    <Button
-       android:id="@+id/off"
+       android:id="@+id/diod_off"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginTop="84dp"
-       android:text="@string/off"
+       android:text="@string/diod_off"
        app:layout_constraintHorizontal_bias="0.498"
        app:layout_constraintLeft_toLeftOf="parent"
+
        app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toTopOf="@+id/on" />
+       app:layout_constraintTop_toTopOf="@+id/diod_on" />
 
    <Button
-       android:id="@+id/connect"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="84dp"
-       android:text="@string/connect"
-       app:layout_constraintHorizontal_bias="0.947"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toTopOf="@+id/off" />
+       android:id="@+id/temperature"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_marginTop="240dp"
+       android:text="@string/temperature"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent" />
 
-   <Button
-       android:id="@+id/disconnect"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="4dp"
-       android:text="@string/disconnect"
-       app:layout_constraintHorizontal_bias="0.145"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="parent"
-       app:layout_constraintTop_toTopOf="@+id/connect" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

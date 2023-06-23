@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message STMMessage {
+    required int32 messageId = 1;
+    required int32 temperatureInt = 2;
+    required int32 temperatureFraction = 3;
+    optional int32 fakeMeasure = 4;
+}

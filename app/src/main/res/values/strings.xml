@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">My Application10</string>
-    <string name="on">on</string>
-    <string name="off">off</string>
-    <string name="connect">connect</string>
+    <string name="diod_on">diod_on</string>
+    <string name="diod_off">diod_off</string>
+    <string name="temperature">temp</string>
     <string name="disconnect">disconnect</string>
-    <string name="temperature">Temperature:</string>
+    <string name="temperatureTextView">temperatureTextView</string>
+
+    <string name="TempOn">TempOn</string>
+    <string name="TempOff">TempOff</string>
+
+
 </resources>
